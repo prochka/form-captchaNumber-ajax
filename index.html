@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.loc</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script type="text/javascript" src="libs/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/captcha.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div id="form-main">
+		<div id="form-div">
+			<form class="form" id="form1" action="">
+
+				<p class="name">
+					<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+				</p>
+
+				<p class="email">
+					<input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
+				</p>
+
+				<p class="text">
+					<textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
+				</p>
+
+				<div class="registration">	
+					<fieldset>	
+						<legend>Давайте проверим вашу человечность</legend>
+						<div class="captcha_wrap">
+							<div class="captcha">
+								Расставьте по порядку
+							</div>
+							<ul id="sortable">
+								<li class="captchaItem">1</li>
+								<li class="captchaItem">2</li>
+								<li class="captchaItem">3</li>
+								<li class="captchaItem">4</li>
+								<li class="captchaItem">5</li>
+								<li class="captchaItem">6</li>
+							</ul>
+						</div>
+					</fieldset>
+				</div>
+				<div class="submit">
+					<input type="submit" value="SEND" id="button-blue"/>
+					<div class="ease"></div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+	</html>
