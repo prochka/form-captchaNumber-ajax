@@ -10,11 +10,9 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body>
-	<div id="form-main">
+<body>	
 		<div id="form-div">
 			<form class="form" id="form1" action="">
-
 				<p class="name">
 					<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
 				</p>
@@ -25,32 +23,40 @@
 
 				<p class="text">
 					<textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
-				</p>
-
-				<div class="registration">	
-					<fieldset>	
-						<legend>Давайте проверим вашу человечность</legend>
-						<div class="captcha_wrap">
-							<div class="captcha">
-								Расставьте по порядку
-							</div>
-							<ul id="sortable">
-								<li class="captchaItem">1</li>
-								<li class="captchaItem">2</li>
-								<li class="captchaItem">3</li>
-								<li class="captchaItem">4</li>
-								<li class="captchaItem">5</li>
-								<li class="captchaItem">6</li>
-							</ul>
-						</div>
-					</fieldset>
-				</div>
-				<div class="submit">
-					<input type="submit" value="SEND" id="button-blue"/>
-					<div class="ease"></div>
-				</div>
+				</p>						
 			</form>
+			<div class="registration">	
+				<fieldset>	
+					<legend>Давайте проверим вашу человечность</legend>
+					<div class="captcha_wrap">
+						<div class="captcha">
+							Расставьте по порядку
+						</div>
+						<ul id="sortable">
+							<li class="captchaItem">1</li>
+							<li class="captchaItem">2</li>
+							<li class="captchaItem">3</li>
+							<li class="captchaItem">4</li>
+							<li class="captchaItem">5</li>
+							<li class="captchaItem">6</li>
+						</ul>
+					</div>
+				</fieldset>
+			</div>		
+			<div class="submit">
+				<button  id="button-blue">send</button>
+				<div class="ease"></div>
+				<div id="new2"></div>				
 		</div>
-		<script type="text/javascript" src="js/script.js"></script>
-	</body>
-	</html>
+			<!--МОДАЛЬНОЕ ОКНО-->
+		<div id="boxes"> 
+			<div id="mask"> 
+				<div id="dialog" class="window"> 
+					<div class="top"><a href="#" class="link close"/>Закрыть</a></div>
+					<div class="content"></div>
+				</div>
+			</div>			
+		</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
